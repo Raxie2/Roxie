@@ -31,7 +31,7 @@ CODE = (environ.get('CODE', 'https://graph.org/file/e419f801841c2ee3db0fc.jpg'))
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6045160821').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001934525883 -1002233647976 -1002191291739 -1002152906241 -1002152906241 -1002181251938 -1002248009127').split()] #Channel id for auto indexing ( make sure bot is admin )
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002432923495 -1001934525883 -1002233647976 -1002191291739 -1002152906241 -1002152906241 -1002181251938 -1002248009127').split()] #Channel id for auto indexing ( make sure bot is admin )
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002264810255')) #Log channel id ( make sure bot is admin )
 DEENDAYAL_MOVIE_UPDATE_CHANNEL = int(environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL', '0')) #Notification of those who verify will be sent to your channel. Enter the ID of the channel you want to send notification to here.
 PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '0')) # add premium logs channel id
@@ -99,7 +99,7 @@ LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False")
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002398327118 -1001934525883 -1002233647976 -1002191291739 -1002152906241 -1002152906241 -1002181251938 -1002248009127')).split()]
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002432923495 -1002398327118 -1001934525883 -1002233647976 -1002191291739 -1002152906241 -1002152906241 -1002181251938 -1002248009127')).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "False")), False)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), True)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
